@@ -5,9 +5,9 @@ var devicePosition = {
 }
 
 function updatePosition(event) {
-  devicePosition.x += event.gamma
-  devicePosition.y += event.beta
-  devicePosition.z += event.alpha
+  devicePosition.x = event.gamma
+  devicePosition.y = event.beta
+  devicePosition.z = event.alpha
   displayForDebug.update =
     event.gamma + '<br>' + event.beta + '<br>' + event.alpha
 }
