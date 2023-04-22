@@ -9,7 +9,7 @@ function updatePosition(event) {
   devicePosition.y += event.beta
   devicePosition.z += event.alpha
   displayForDebug.update =
-    event.gamma + ' : ' + event.beta + ' : ' + event.alpha
+    event.gamma + '<br>' + event.beta + '<br>' + event.alpha
 }
 
 function resetPosition() {

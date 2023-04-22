@@ -1,5 +1,3 @@
-var audioContext = new AudioContext()
-
 window.onload = () => {
   document.body.addEventListener('click', () => {
     console.log('on click')
@@ -19,23 +17,6 @@ window.onload = () => {
 
 const displayForDebug = {
   set update(text) {
-    document.getElementById('display-for-debug').textContent = text
+    document.getElementById('display-for-debug').innerHTML = text
   },
-}
-
-//..........................
-function play(hz) {
-  //..........................
-  // window.AudioContext = window.AudioContext || window.webkitAudioContext
-
-  var osc = audioContext.createOscillator()
-  osc.frequency.value = hz
-  var audDes = audioContext.destination
-  osc.connect(audDes)
-  osc.start = osc.start || osc.noteOn
-  osc.start()
-
-  setTimeout(function () {
-    osc.stop(0)
-  }, 200)
 }
