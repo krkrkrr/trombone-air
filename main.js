@@ -14,6 +14,7 @@ window.onload = () => {
       })
     }
   })
+  window.addEventListener('deviceorientation', updatePosition)
 }
 
 const displayForDebug = {

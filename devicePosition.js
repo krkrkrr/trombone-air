@@ -4,8 +4,6 @@ var devicePosition = {
   z: 0,
 }
 
-window.addEventListener('deviceorientation', updatePosition)
-
 function updatePosition(event) {
   devicePosition.x += event.gamma
   devicePosition.y += event.beta
