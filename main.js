@@ -16,6 +16,12 @@ window.onload = () => {
   })
 }
 
+const displayForDebug = {
+  set update(text) {
+    document.getElementById('display-for-debug').textContent = text
+  },
+}
+
 //..........................
 function play(hz) {
   //..........................

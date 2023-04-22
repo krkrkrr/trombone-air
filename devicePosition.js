@@ -1,0 +1,20 @@
+var devicePosition = {
+  x: 0,
+  y: 0,
+  z: 0,
+}
+
+window.addEventListener('deviceorientation', updatePosition)
+
+function updatePosition(event) {
+  devicePosition.x += event.gamma
+  devicePosition.y += event.beta
+  devicePosition.z += event.alpha
+  displayForDebug.update = devicePosition.x
+}
+
+function resetPosition() {
+  devicePosition.x = 0
+  devicePosition.y = 0
+  devicePosition.z = 0
+}
