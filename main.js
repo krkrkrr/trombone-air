@@ -1,6 +1,6 @@
 window.onload = () => {
   window.addEventListener('deviceorientation', updatePosition)
-  document.body.addEventListener('mousedown', startTone)
+  document.body.addEventListener('click', startTone)
   document.body.addEventListener('mouseup', stopTone)
 }
 
