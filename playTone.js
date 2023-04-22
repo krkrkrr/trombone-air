@@ -21,7 +21,7 @@ function playTone(
   }
   //..........................
   // window.AudioContext = window.AudioContext || window.webkitAudioContext
-  oscillator.frequency.value = BASE_FREQUENCY - devicePosition.y
+  oscillator.frequency.value = BASE_FREQUENCY - devicePosition
 
   setTimeout(function () {
     playTone(oscillator)
