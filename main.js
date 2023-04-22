@@ -1,7 +1,7 @@
 window.onload = () => {
-  window.addEventListener('deviceorientation', updatePosition)
-  document.body.addEventListener('click', startTone)
-  document.body.addEventListener('mouseup', stopTone)
+  window.addEventListener('devicemotion', updatePosition)
+  document.body.addEventListener('touchstart', startTone)
+  document.body.addEventListener('touchend', stopTone)
 }
 
 const displayForDebug = {
